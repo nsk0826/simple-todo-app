@@ -1,9 +1,9 @@
 import { combineReducers, createStore } from 'redux';
 import { IState } from './states/IState';
-import userReducer from './reducers/UserReducer';
+import taskReducer from './reducers/TaskReducer';
 
 const combinedReducers = combineReducers<IState>({
-    user: userReducer,
+    taskList: taskReducer,
 });
 
 export const store = createStore(combinedReducers);
