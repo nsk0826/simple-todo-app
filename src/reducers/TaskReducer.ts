@@ -6,7 +6,7 @@ import {
     deleteTaskAction,
     toggleCompleteAction,
     getTaskList,
-} from '../actions/TsakAction';
+} from '../actions/TaskAction';
 
 const initState: ITaskList = {
     tasks: [],
