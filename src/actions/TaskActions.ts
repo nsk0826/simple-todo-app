@@ -5,7 +5,7 @@ import { ITask } from '../states/ITask';
 
 const actionCreator = actionCreatorFactory('task-actions');
 
-export const showTaskAction = actionCreator<ITask[]>('show-task-list');
+export const showTaskListAction = actionCreator<ITask[]>('show-task-list');
 
 export const addTaskAction = actionCreator<ITask>('add');
 
@@ -41,5 +41,5 @@ const dummyTasks: ITask[] = [
 ];
 
 export const getTaskList = (dispatch: Dispatch): void => {
-    dispatch(showTaskAction(dummyTasks));
+    dispatch(showTaskListAction(dummyTasks));
 };

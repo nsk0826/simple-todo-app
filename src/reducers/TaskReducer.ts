@@ -1,12 +1,12 @@
 import { reducerWithInitialState } from 'typescript-fsa-reducers';
 import { ITaskList } from '../states/ITask';
 import {
-    showTaskAction,
+    showTaskListAction,
     addTaskAction,
     deleteTaskAction,
     toggleCompleteAction,
     getTaskList,
-} from '../actions/TaskAction';
+} from '../actions/TaskActions';
 
 const initState: ITaskList = {
     tasks: [],
@@ -29,7 +29,7 @@ const taskReducer = reducerWithInitialState<ITaskList>(initState)
         const taskList = state.tasks.filter(task => task.id !== payload);
         return {
             ...state,
-            tasks: getTaskList,
+            tasks: taskList,
         };
     })
 

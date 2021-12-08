@@ -5,7 +5,7 @@ import baseStyled, {
     ThemedStyledInterface,
 } from 'styled-components';
 
-export const GrobalStyle = createGlobalStyle`
+export const GlobalStyle = createGlobalStyle`
 html, body {
     font-family: "Meiryo UI";
     font-size: 12pt;

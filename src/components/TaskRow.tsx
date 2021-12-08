@@ -1,7 +1,7 @@
 import moment from 'moment';
 import React, { useCallback, useMemo, MouseEvent } from 'react';
 import { useDispatch } from 'react-redux';
-import { deleteTaskAction, toggleCompleteAction } from '../actions/TaskAction';
+import { deleteTaskAction, toggleCompleteAction } from '../actions/TaskActions';
 import { ITask } from '../states/ITask';
 import { styled } from './FoundationStyles';
 
