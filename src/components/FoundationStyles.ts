@@ -1,4 +1,4 @@
-import 'reser-css/reset.css';
+import 'reset-css/reset.css';
 
 import baseStyled, {
     createGlobalStyle,

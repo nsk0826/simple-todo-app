@@ -14,13 +14,18 @@ module.exports = {
 
     module: {
         rules: [
+            // {
+            //     test: /\.tsx?$/,
+            //     enforce: 'pre',
+            //     loader: 'eslint-loader',
+            // },
             {
                 test: /\.tsx?$/,
                 use: 'ts-loader',
             },
             {
                 test: /\.css$/,
-                loaders: ['style-loader', 'css-loader'],
+                use: ['style-loader', 'css-loader'],
             },
         ],
     },
